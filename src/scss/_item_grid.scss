@@ -1,0 +1,112 @@
+#residential {
+  position: relative;
+  .residential-title {
+    h2 {
+      text-align: center;
+      color: $green;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+  .container {
+    max-width: 1170px;
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-auto-rows: 500px;
+
+    .item {
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+
+      .item-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $background-color;
+        font-size: 2rem;
+        background-color: rgba(125, 160, 65, 0.8);
+        transform: translateY(-100%);
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .bg-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 20;
+  }
+}
+
+#commercial {
+  position: relative;
+  .commercial-title {
+    h2 {
+      text-align: center;
+      color: $green;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+  .container {
+    max-width: 1170px;
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-auto-rows: 500px;
+
+    .item {
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+
+      .item-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $background-color;
+        font-size: 2rem;
+        background-color: rgba(125, 160, 65, 0.8);
+        transform: translateY(-100%);
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

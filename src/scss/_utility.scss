@@ -1,0 +1,20 @@
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.ptb-1 {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  margin: auto 0;
+  width: $website-width;
+  background-color: $background-color;
+}

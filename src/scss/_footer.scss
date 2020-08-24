@@ -1,0 +1,66 @@
+footer {
+  padding: 4rem 0;
+  background-color: $primary-color;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h4,
+  h5 {
+    text-align: center;
+    font-size: 2rem;
+    color: $green;
+    font-weight: 400;
+  }
+
+  h6 {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $grey;
+  }
+
+  .links {
+    display: flex;
+    width: 5rem;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 0.5rem;
+    a {
+      text-align: center;
+      color: $white;
+      text-decoration: none;
+      font-size: 1.5rem;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  .copyright {
+    padding-top: 2rem;
+
+    p {
+      font-weight: 400;
+      color: $grey;
+    }
+  }
+
+  .contact-info {
+    .contact-links {
+      p {
+        padding-top: 0.5rem;
+        text-align: center;
+        font-weight: 300;
+      }
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+}

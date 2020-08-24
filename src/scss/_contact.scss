@@ -1,0 +1,84 @@
+#contact {
+  padding-bottom: 2rem;
+  .container {
+    max-width: $about-width;
+    margin: 0 auto;
+    overflow: hidden;
+
+    h2 {
+      text-align: center;
+      color: $green;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    .contact-container {
+      width: 100%;
+      margin: auto;
+
+      .contact-form {
+        margin: 5% 0;
+
+        ul {
+          list-style: none;
+          margin-bottom: 40px;
+          border-radius: 0;
+        }
+
+        li:last-of-type {
+          border-bottom: none;
+        }
+
+        label {
+          display: block;
+          font-size: 1rem;
+          color: rgb(97, 97, 97);
+          font-weight: 300;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: none;
+          resize: vertical;
+          background: transparent;
+          color: #101010;
+          font-weight: 400;
+
+          &:focus {
+            outline: none !important;
+            border: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    background: none;
+    border: 0.3pt solid $green;
+    text-transform: uppercase !important;
+    font-size: 0.7rem !important;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 3px;
+
+    &:hover {
+      background: $green;
+      color: $background-color;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+.contact .icon-title {
+  margin-top: 10px;
+  color: #000;
+}
+
+.textarea {
+  border-bottom: 1px solid $green;
+}

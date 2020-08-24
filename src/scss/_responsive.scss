@@ -1,0 +1,140 @@
+// Tablets & Smaller
+@media (max-width: 800px) {
+  .sticky {
+    width: 100%;
+  }
+
+  #about {
+    .container {
+      p {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  #contact {
+    .container {
+      .contact-container {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 500px) {
+  #home {
+    .container {
+      .tel {
+        font-size: 0.6rem;
+        justify-content: center;
+      }
+      .logo {
+        font-size: 1rem;
+      }
+
+      .main-nav,
+      .sticky {
+        ul {
+          height: 50px;
+          font-size: 0.6rem;
+          width: 100vw;
+        }
+      }
+    }
+  }
+
+  #about {
+    h2 {
+      font-size: 0.8rem;
+    }
+    p {
+      font-size: 0.6rem;
+    }
+  }
+
+  #residential {
+    h2 {
+      font-size: 0.8rem;
+    }
+    .container {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    }
+  }
+
+  #commercial {
+    h2 {
+      font-size: 0.8rem;
+    }
+    .container {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    }
+  }
+
+  #contact {
+    .container {
+      h2 {
+        font-size: 0.8rem;
+      }
+
+      .contact-container {
+        .contact-form {
+          label {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+
+    button {
+      background: none;
+      width: 100%;
+      text-transform: uppercase !important;
+      font-size: 0.5rem !important;
+      letter-spacing: 2px;
+      padding: 0.7rem 1.5rem;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      border-radius: 3px;
+
+      &:hover {
+        background: $green;
+        color: $background-color;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  footer {
+    h4,
+    h5 {
+      font-size: 1.2rem;
+    }
+
+    h6 {
+      font-size: 1rem;
+    }
+
+    .links {
+      a {
+        font-size: 1.2rem;
+      }
+    }
+
+    .copyright {
+      p {
+        font-size: 0.6rem;
+      }
+    }
+
+    .contact-info {
+      .contact-links {
+        p {
+          font-size: 0.7rem;
+          text-align: center;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
